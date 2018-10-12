@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        img{
+            position: relative;
+            /*margin-top: 10px;*/
+            vertical-align: middle;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<form action="login.php">
+    输入验证密码:<input type="text" name="txt">
+    <img src="qr.php" alt=""><br/>
+    <input type="hidden" name="isLogin" value="yes">
+    <button>提交</button>
+
+</form>
+</body>
+</html>
+<script>
+    var img=document.querySelector('img');
+//    console.log(img);
+    img.onclick=function () {
+        this.src="qr.php?di="+Math.random();
+    }
+
+
+    //    var img = document.querySelector('img');
+//    img.onclick = function () {
+//        this.src = 'qr.php?m='+Math.random();
+//    }
+
+
+
+
+</script>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        表单：获取用户数据  需要将数据提交给who ??
+        action:将表单的数据提交给哪一个程序来进行处理  可缺省的 如果不写这个属性就表示将数据提交给本页面来进行处理   如果写了就表示将数据提交给指定的程序来进行处理
+        method: 表示表单数据提交的方式  get|post   默认是get
+    -->
+    <form action="getDate.php">
+        <label for="user">用户名</label><input type="text" id="user" name="user"/>
+        <input type="hidden" name="sysid" value="web">
+        <input type="submit" />
+    </form>
+</body>
+</html>
